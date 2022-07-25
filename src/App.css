@@ -23,6 +23,7 @@ body {
   padding: 0.9rem;
   margin-left: 0.7rem;
   font-family: "Poppins";
+  cursor: pointer;
 }
 .todo #add-todo {
   padding: 0.9rem;
