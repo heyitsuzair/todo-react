@@ -128,6 +128,9 @@ input {
   body {
     padding: 0rem;
   }
+  .todo #add-todo {
+    width: 55vw;
+  }
 }
 @media (max-width: 320px) {
   body {
