@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+:root {
+  --color-gray: #f0efed;
+  --color-blue: #1c07fa;
+}
+body {
+  font-family: "Poppins";
+  background-color: var(--color-gray);
+  padding: 10rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Todo Component */
+.todo {
+  background-color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo .todo-inner {
+  padding: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-primary {
+  background: var(--color-blue);
   color: white;
+  border: none;
+  padding: 0.9rem;
+  margin-left: 0.7rem;
+  font-family: "Poppins";
 }
-
-.App-link {
-  color: #61dafb;
+.todo #add-todo {
+  padding: 0.9rem;
+  outline: none;
+  border: 2px solid var(--color-gray);
+  width: 100vw;
+  font-family: "Poppins";
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.todo .add-todo form {
+  display: flex;
+  justify-content: space-between;
+}
+/* Media queries */
+@media (max-width: 676px) {
+  body {
+    padding: 4rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 467px) {
+  body {
+    padding: 2rem;
+  }
+}
+@media (max-width: 467px) {
+  body {
+    padding: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    padding: 0rem;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    padding: 0rem;
+  }
+  .todo .todo-inner {
+    padding: 1rem;
   }
 }
