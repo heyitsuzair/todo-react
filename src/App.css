@@ -129,7 +129,7 @@ input {
     padding: 0rem;
   }
   .todo #add-todo {
-    width: 55vw;
+    width: 65vw;
   }
 }
 @media (max-width: 320px) {
